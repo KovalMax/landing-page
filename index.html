@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-<main class="wrapper">
+<main class="wrapper" id="subscription" style="display: none">
+    <div class="container">
+        <p class="header__top-content_paragraph" id="sub-text">Subscribed!</p>
+        <button class="header__top-content_button" id="back-to-page">Back to page</button>
+    </div>
+</main>
+
+<main class="wrapper" id="main">
     <a class="top-link hide" href="" id="back-to-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
         <span class="screen-reader-text">Back to top</span>
@@ -257,8 +264,8 @@
                     offers, and resources.
                 </p>
 
-                <form class="footer__subscribe_form" onsubmit="return subscribeFormAction(event)">
-                    <input type="text" placeholder="Your email address" class="footer__subscribe_form-input" />
+                <form class="footer__subscribe_form" id="subscribe-form">
+                    <input required type="email" placeholder="E-mail address" class="footer__subscribe_form-input" name="email"/>
                     <button class="footer__subscribe_form-button">Subscribe</button>
                 </form>
             </div>
@@ -308,5 +315,6 @@
 </main>
 
 <script src="js/main.js"></script>
+<script src="js/subscribe.js"></script>
 </body>
 </html>
