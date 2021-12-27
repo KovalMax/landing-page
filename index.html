@@ -260,12 +260,12 @@
         <footer class="footer">
             <div class="footer__subscribe">
                 <p class="footer__subscribe_paragraph">
-                    <strong>Subscribe to our newsletter</strong><br> A monthly digest of the new WOODIES products, hot
-                    offers, and resources.
+                    <strong>Subscribe to our newsletter</strong><br> A monthly digest of the new WOODIES products, hot offers, and resources.
                 </p>
 
                 <form class="footer__subscribe_form" id="subscribe-form">
-                    <input required type="email" placeholder="E-mail address" class="footer__subscribe_form-input" name="email"/>
+                    <label for="email" style="display: none"></label>
+                    <input required type="email" id="email" placeholder="E-mail address" class="footer__subscribe_form-input" name="email"/>
                     <button class="footer__subscribe_form-button">Subscribe</button>
                 </form>
             </div>
@@ -314,7 +314,8 @@
     </div>
 </main>
 
-<script src="js/main.js"></script>
+<script src="js/slides.js"></script>
 <script src="js/subscribe.js"></script>
+<script src="js/scroller.js"></script>
 </body>
 </html>
